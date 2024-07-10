@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bionic Text Converter</title>
+    <script>
+        function convert(){
+            var div = document.getElementById("to_paste")
+            const text_val = document.getElementById("text").value
+            div.innerHTML = ""
+            var text = text_val.split(" ")
+            for (let i=0; i< text.length;i++){
+                let bold_len = (text[i].length / 2)
+                div.innerHTML += `<b>${text[i].slice(0,bold_len)}</b>${text[i].slice(bold_len,text[i].length)} `
+            }
+            console.log(text)
+        }
+    </script>
+</head>
+<body>
+    <h1>Bionic Text Converter</h1>
+    <textarea id="text"></textarea>
+    <button onclick="convert()">Submit</button>
+    <div id="to_paste">
+
+    </div>
+</body>
+</html>
