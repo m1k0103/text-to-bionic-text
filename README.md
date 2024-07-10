@@ -9,5 +9,5 @@ Well then use this Bionic Text Converter! It allows you to convert normal text i
 
 Just paste your text into the box, press submit, and copy the output text straight to a text document. Then you're done!
 
-=====
+
 Enjoy :)
